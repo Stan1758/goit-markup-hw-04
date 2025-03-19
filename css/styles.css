@@ -68,7 +68,6 @@ img {
   padding: 24px 156px;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-  position: relative;
 }
 .page-header .container {
   display: flex;
@@ -84,6 +83,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  
 }
 
 .header-nav {
@@ -97,7 +97,6 @@ img {
   display: flex;
   justify-content: space-between;
   width: 261px;
-  /* position: relative; */
 }
 
 .header-adress-list {
@@ -124,7 +123,8 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  transition: var(--animation);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
 }
 
 .nav-link:hover {
@@ -145,7 +145,7 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  transition: var(--animation);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts:hover,
@@ -155,7 +155,6 @@ address {
 }
 
 .studio-link {
-  /* position: relative; */
   color: #404bbf;
 }
 
@@ -166,7 +165,7 @@ address {
   height: 4px;
   background-color: var(--ocean);
   bottom: -1px;
-  left: 395px;
+  left: px;
   position: absolute;
   overflow: hidden;
 }
@@ -347,6 +346,7 @@ address {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .team-name {
@@ -393,6 +393,14 @@ address {
   margin: auto;
 }
 
+.link-social-icon:hover
+ {
+  background-color: #404bbf;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1):
+}
+.link-social-icon:focus {
+background-color: #31d0aa; 
+}
 /* #endregion Team*/
 
 /* #region Portfolio*/
@@ -545,9 +553,4 @@ address {
   margin-right: 120px;
 }
 
-.link-social-icon:hover,
-.link-social-icon:focus {
-  background-color: var(--green);
-  transition: transform var(--animation);
-}
 /* #endregion Footer */
